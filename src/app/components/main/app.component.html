@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Choose Seats</title>
+</head>
+
+<body>
+    <div>
+
+        <md-card>
+            <md-card-subtitle><b>PICK YOUR SEATS</b></md-card-subtitle>
+            <md-card-content>
+                <md-grid-list cols="12" rowHeight="2:2">
+                    <md-grid-tile *ngFor="let seat of seats" [ngClass]="{'is-available':seat.available ,'isNot-available':!seat.available ,'checkAvailability':seat.isEdited}" (click)="checkAvailability(seat)">
+                    </md-grid-tile>
+                </md-grid-list>
+            </md-card-content>
+            <md-card-footer>
+                You Selected {{totalSelectedSeats}} Seats.
+            </md-card-footer>
+        </md-card>
+    </div>
+
+    <ng-content></ng-content>
+</body>
+
+</html>

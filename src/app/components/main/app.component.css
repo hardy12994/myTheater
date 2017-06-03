@@ -1,0 +1,21 @@
+ .isNot-available {
+     background: red;
+ }
+ 
+ .is-available {
+     background: green;
+     cursor: pointer;
+ }
+ 
+ .checkAvailability {
+     background: yellow;
+     cursor: pointer;
+ }
+ 
+ md-card {
+     background: #f2f2f2;
+ }
+ 
+ md-card-subtitle {
+     color: red;
+ }
